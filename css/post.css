@@ -1,0 +1,62 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+#wpadminbar{
+	display:none;
+}
+#colophon{
+	display:none;
+}
+.sbi_header_img_hover{
+	display:none;
+}
+#sbi_load{
+	display:none;
+}
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    text-align:center;
+}
+/*__ Common   ____________________________*/
+.PageWrapper{
+    /* height: 100%; */
+    text-align: center;
+    min-height: 100%;
+    padding-top: 50px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-bottom: 50px; */
+}
+.ContentsArea{
+	padding: 150px 70px;
+	font-weight:700;
+	text-align:left;
+}
+.ContentsArea > .title{
+	font-size:20pt;
+	margin-bottom:30px;
+}
+.borderImage{
+	border:solid 1px;
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+	.ContentsArea {
+		padding: 80px 40px;
+	}
+	.ContentsArea > .title {
+		display: block;
+		position: initial;
+		margin-bottom:20px;
+	}
+	.ContentsArea > .contents {
+		display: block;
+		width: 100%;
+	}
+
+}
+

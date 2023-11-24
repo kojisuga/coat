@@ -1,0 +1,87 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 50px;
+}
+
+.PageWrapper > .ContentsArea{
+    padding: 80px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    min-width: 800px;
+    text-align: left;
+    display: inline-block;
+    border: solid 0.5px #cccccc;
+	background: #f8f8f8;
+
+}
+.PageWrapper > .ContentsArea > .title{
+    margin-bottom: 30px;
+	font-weight:bold;
+}
+#total{
+}
+#total > .caption{
+	margin-bottom:30px;
+}
+.totalPrice{
+	display: inline-block;
+	margin-bottom:60px;
+
+}
+.totalPrice > .caption{
+}
+.totalPrice > .parts{
+	margin-bottom:10px;
+}
+.totalPrice > .parts > .label{
+	width: 80px;
+	display: inline-block;
+}
+.totalPrice > .parts > .data{
+	display: inline-block;
+}
+.totalPrice > .aLink{
+}
+.orderForm{
+}
+.orderForm > .contents{
+}
+.orderForm > .contents > .parts{
+    margin-bottom: 14px;
+
+}
+.orderForm > .contents > .parts label{
+    width: 80px;
+    display: inline-block;
+}
+.orderForm > .contents > .parts input{
+    width: 300px;
+	display: inline-block;
+}
+.orderForm > .contents > .parts textarea{
+	vertical-align:top;
+    width: 500px;
+}
+#buttonParts{
+	padding-top:20px;
+	padding-left:80px;
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

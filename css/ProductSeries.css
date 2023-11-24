@@ -1,0 +1,166 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ContentsLayoutWrapper{
+ 	max-width: 1600px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 110px;
+    margin-bottom:100px;
+}
+@media only screen and (max-width: 1300px){
+.ContentsLayoutWrapper{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+}
+
+
+/* mainimage___________ */
+.ContentsLayoutWrapper > .main{
+	margin-bottom: 24px;
+}
+.ContentsLayoutWrapper > .main img{
+	display:inline-block;
+    width: calc(45%);
+	min-width: 400px;
+	margin-right:50px;
+    vertical-align: middle;
+}
+.ContentsLayoutWrapper > .main > .caption{
+	display:inline-block;
+	width: calc(45% - 40px);
+    vertical-align: middle;
+}
+.ContentsLayoutWrapper > .main > .caption > .title{
+	
+}
+.ContentsLayoutWrapper > .main > .caption > .content{
+
+}
+
+/* subimage___________ */
+.ContentsLayoutWrapper > .subimagewrapper{
+}
+.ContentsLayoutWrapper > .subimagewrapper > .parts{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: calc(200px - 14px);
+    width: 45%;
+}
+.ContentsLayoutWrapper > .subimagewrapper > .parts img{
+}
+
+/* ProdutArea ___________ */
+.ContentsLayoutWrapper > .ProdutArea{
+	
+}
+.ContentsLayoutWrapper > .ProdutArea > .title{
+	position: absolute;
+    width: 300px;
+    
+	-moz-transform: translate(-20px, 15px) rotate(90deg);
+	-webkit-transform: translate(-20px, 15px) rotate(90deg);
+	-o-transform: translate(-20px, 15px) rotate(90deg);
+	-ms-transform: translate(-20px, 15px) rotate(90deg);
+	transform: translate(-20px, 15px) rotate(90deg);
+
+	-moz-transform-origin:left;
+	-webkit-transform-origin:left;
+	-o-transform-origin:left;
+	-ms-transform-origin:left;
+	transform-origin:left;
+}
+.ContentsLayoutWrapper > .ProdutArea > .title > .line{
+    display: inline-block;
+	vertical-align:middle;
+    margin-right: 10px;
+	height:1px;
+	width:50px;
+	background-color:#aaaaaa;
+}
+.ContentsLayoutWrapper > .ProdutArea > .title > .text{
+    display: inline-block;
+	vertical-align:middle;
+}
+.ContentsLayoutWrapper > .ProdutArea > a{
+	color:black;
+	outline: none;
+
+}
+.ContentsLayoutWrapper > .ProdutArea > a > .parts{
+    display: inline-block;
+    margin-right: 20px;
+    min-width: calc(200px - 14px);
+    width: calc(22.5% - 14px);
+}
+.ContentsLayoutWrapper > .ProdutArea > a >  .parts img{
+}
+.ContentsLayoutWrapper > .ProdutArea > a >  .parts > .name{
+	text-align:center;
+}
+.ContentsLayoutWrapper > .ProdutArea > a >  .parts > .option{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ContentsLayoutWrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ContentsLayoutWrapper > .main img {
+    display: inline-block;
+	width: 100%;
+    min-width: initial;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+.ContentsLayoutWrapper > .main > .caption {
+    width: 100%;
+}
+.ContentsLayoutWrapper > .subimagewrapper > .parts {
+	width: 100%;
+    margin-right: 0;
+	margin-bottom: 30px;
+    min-width: initial;
+
+}
+.ContentsLayoutWrapper > .ProdutArea > a > .parts {
+    width: calc(50% - 23px);
+    min-width: initial;
+}
+.ContentsLayoutWrapper > .ProdutArea > .title {
+	position: initial;
+    width: 300px;
+    -moz-transform: initial;
+    -webkit-transform: initial;
+    -o-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    -moz-transform-origin: initial;
+    -webkit-transform-origin: initial;
+    -o-transform-origin: initial;
+    -ms-transform-origin: initial;
+    transform-origin: initial;
+
+}
+
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

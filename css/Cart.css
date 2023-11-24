@@ -1,0 +1,95 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 50px;
+}
+
+.PageWrapper > .ContentsArea{
+    padding: 0;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    min-width: 800px;
+    text-align: left;
+    display: inline-block;
+	border-bottom: solid 0.5px;
+}
+.PageWrapper > .ContentsArea > .title{
+    margin-bottom: 30px;
+	font-weight:bold;
+}
+.PageWrapper > .ContentsArea > .cartContents{
+	display: inline-block;
+	/*
+    max-width: 800px;
+    min-width: 800px;
+    border: solid 0.5px #cccccc;
+	background: #fafafa;
+	*/
+	margin-bottom:30px;
+    text-align: left;
+}
+.PageWrapper > .ContentsArea > .cartContents > .image{
+	display: inline-block;
+	width:150px;
+	height:175px;
+	margin-right:30px;
+	border: solid 0.5px #cccccc;
+	vertical-align:top;
+
+}
+.PageWrapper > .ContentsArea > .cartContents > .caption{
+	display: inline-block;
+	vertical-align:top;
+}
+.PageWrapper > .ContentsArea > .cartContents > .caption > .parts{
+	margin-bottom:10px;
+	padding-bottom:10px;
+    border-bottom: solid 0.5px #dddddd;
+	
+}
+.PageWrapper > .ContentsArea > .cartContents > .caption > .parts > .label{
+	display:inline-block;
+	width:100px;
+}
+.PageWrapper > .ContentsArea > .cartContents > .caption > .parts > .data{
+	display:inline-block;
+}
+#total{
+	border:initial;
+}
+.totalPrice{
+	display: inline-block;
+}
+.totalPrice > .caption{
+}
+.totalPrice > .parts{
+	margin-bottom:40px;
+}
+.totalPrice > .parts > .label{
+	width: 80px;
+	display: inline-block;
+}
+.totalPrice > .parts > .data{
+	display: inline-block;
+}
+.totalPrice > .aLink{
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

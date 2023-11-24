@@ -1,0 +1,91 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+.FooterWrapper {
+    text-align: left;
+    background: gray;
+    color: white;
+}
+.FooterWrapper > .menu{
+    padding-bottom: 80px;
+    padding-top: 50px;
+	padding-left: 70px;
+}
+.FooterWrapper > .menu > .parts  {
+	width: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.FooterWrapper > .menu > .parts >.List {
+    margin-top: 15px;
+}
+.FooterWrapper > .menu > .parts > .ListSub {
+    position: relative;
+    margin-top: 5px;
+	color:#bbbbbb;
+}
+
+.FooterWrapper > .menu > .parts > .ListSub:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 0.5px;
+    background: black;
+    transform: translate(-22px, 11px);
+}
+
+
+.FooterWrapper > .info > .info_contents{
+    display:inline-block;
+	padding-left: 50px;
+	padding-bottom:30px;
+    width: 450px;
+}
+.FooterWrapper > .info > .info_contents >.logo{
+	display:inline-block;
+	vertical-align: middle;
+}
+.FooterWrapper > .info > .info_contents >.logo img{
+	width: 140px;
+}
+.FooterWrapper > .info > .info_contents > .caption{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.FooterWrapper > .info > .copyright{
+    display: inline-block;
+    white-space: nowrap;
+	vertical-align: bottom;
+    width: calc(100% - 480px);
+	padding-bottom: 20px;
+    text-align: right;
+}
+
+
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.FooterWrapper {
+}
+.FooterWrapper > .copyright {
+	text-align:right;
+}
+.FooterWrapper > .pc{
+	display:none;
+}
+.FooterWrapper > .mob{
+	display:block;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

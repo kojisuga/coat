@@ -1,0 +1,229 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+    margin-bottom:80px;
+}
+.PageWrapper > .title{
+	
+    /* margin-bottom: 50px; */
+}
+
+.PageWrapper > .ContentsArea{
+    padding: 0 calc(20vw);
+}
+.PageWrapper > .ContentsArea > .image{
+	margin-bottom:15px;
+}
+#sub_menu{
+}
+#sub_menu > .line{
+    height: 50px;
+    width: 0.5px;
+    background: black;
+    display: inline-block;
+}
+#sub_menu > .wrapper{
+    margin-bottom: 50px;
+}
+#sub_menu > .wrapper > .item{
+	display: inline-block;
+    padding: 0 10px;
+    cursor:pointer;
+}
+
+#side_menu{
+    position: fixed;
+    transform: translateY(80px) rotate(-90deg);
+    transform-origin: left top;
+    top: 50%;
+    left: 15px;    
+    opacity:0;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#side_menu > .item{
+	display: inline-block;
+    padding: 0 10px;
+    cursor:pointer;
+}
+.content > .title{
+    margin-bottom: 100px;
+    text-align: center;
+}
+.content > .title > .line{
+	height: 0.5px;
+    width: 100px;
+    background: black;
+    text-align: center;
+    display: inline-block;
+    transform: rotate(90deg) translate(-60px, 50px);
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+.content > .title > .text{
+	margin-top:50px;
+}
+/*
+.content > .title:before{
+    content: " ";
+    position: absolute;
+    transform: translate(-71px, 18px);
+    background: black;
+    color: red;
+    width: 55px;
+    height: 0.5px;
+}*/
+.content > .parts > .subtitle{
+	margin-bottom:15px;
+}
+
+.content > .parts > .subtitle:before{
+	content:"#";
+    position: absolute;
+    left: 8px;
+}
+
+#intro > .caption{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+}
+#intro > .image{
+    margin-bottom: 50px;
+}
+#intro > .option{
+	white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+    text-align: left;
+    /* display: inline-block; */
+    padding-left: 45px;
+}
+
+#treat{
+}
+#treat > .content{
+    text-align: left;
+    padding: 0 40px;
+}
+#treat > .content > .parts{
+    position: relative;
+    margin-bottom: 40px;
+}
+#treat > .content > .parts > .title{
+    margin-bottom: 10px;
+}
+
+#treat > .content > .parts > .title:before{
+    content: " ";
+    position: absolute;
+    left: -45px;
+    /* top: 1em; */
+    transform: translateY(12px);
+    background: black;
+    color: red;
+    width: 35px;
+    height: 0.5px;
+}
+#treat > .content > .parts > .option{
+    margin-bottom: 11px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#treat > .content > .parts > .caption{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#repletion{
+    background: #EEEEEE;
+    padding: 40px 40px;
+    /* padding-right: 20px; */
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+#repletion > .content{
+}
+#repletion > .content > .title{
+    margin-bottom: 30px;
+}
+#repletion > .content > .caption{
+    margin-bottom: 11px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+#repletion > #reserve{
+    border-bottom: solid 1px #aaaaaa;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+}
+
+#repletion > #attention{
+}
+
+/* for connect */
+#physical{
+}
+#physical > .content{
+    text-align: left;
+}
+#physical > .content > .parts{
+    position: relative;
+    margin-bottom: 40px;
+	padding-bottom: 20px;
+/*
+    border-bottom: solid 0.5px #dddddd;
+	border-top: solid 0.5px #dddddd;
+    border-left: solid 0.5px #dddddd;
+    border-right: solid 0.5px #dddddd;
+*/
+    margin: 45px;
+}
+#physical > .content > .parts > .title{
+    margin-bottom: 10px;
+}
+
+#physical > .content > .parts > .title:before{
+    content: " ";
+    position: absolute;
+    left: -45px;
+    /* top: 1em; */
+    transform: translateY(12px);
+    background: black;
+    color: red;
+    width: 35px;
+    height: 0.5px;
+}
+#physical > .content > .parts > .option{
+    margin-bottom: 11px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#physical > .content > .parts > .caption{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

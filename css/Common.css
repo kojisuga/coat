@@ -1,0 +1,493 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+:root {
+}
+html{
+	font-size: 62.5%;
+}
+
+body{
+	margin:0;            /* 余白消去 */
+    --key-color: #9facb7;
+    background-color: white;
+
+	/* フォント */
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family :'Noto Sans JP', sans-serif;
+    color:black;
+    font-weight: 500;
+	font-size: 1.3rem;
+    line-height: 1.8;
+    letter-spacing:0.12em;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	-text-size-adjust:none;
+	text-size-adjust:none;
+}
+
+/* Layout関連 */
+.Clean{
+	opacity:0;
+}
+.AppearClean{
+	opacity:1;
+}
+
+.hide{
+	display:none !important;
+}
+.LayoutLeft{
+	display:inline-block;
+	text-align:left;
+}
+.LayoutRight{
+	display:inline-block;
+	text-align:right;
+}
+.LayoutClear{
+    clear:both;
+}
+
+/* Animation関連 */
+.FadeIn{
+	opacity:0.0;
+
+	/* animation */	
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+.FadeInUp{
+	opacity:0.0;
+
+	/* animation */	
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+
+	/* Layout*/
+	-moz-transform   : translateY(30px);
+	-webkit-transform: translateY(30px);
+	-o-transform     : translateY(30px);
+	-ms-transform    : translateY(30px);
+	transform        : translateY(30px);
+
+
+}
+.FadeInLeft{
+	opacity:0.0;
+
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+	/* Layout*/
+	-moz-transform   : translateX(50px);
+	-webkit-transform: translateX(50px);
+	-o-transform     : translateX(50px);
+	-ms-transform    : translateX(50px);
+	transform        : translateX(50px);
+	
+
+}
+.FadeInRight{
+	opacity:0.0;
+
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+	/* Layout*/
+	-moz-transform   : translateX(-50px);
+	-webkit-transform: translateX(-50px);
+	-o-transform     : translateX(-50px);
+	-ms-transform    : translateX(-50px);
+	transform        : translateX(-50px);
+}
+.FadeInSlideMaskText{
+	
+	/* Layout */
+	width:0%;
+	overflow-x:hidden;
+	
+	/* animation */	
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+.SlideMaskText{	
+	/* Layout */
+	width:0%;
+	overflow-x:hidden;
+	
+	/* animation */	
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+.animation{
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+.delay250ms{
+	transition-delay: 250ms;
+}
+.delay500ms{
+	transition-delay: 500ms;
+}
+.delay750ms{
+	transition-delay: 750ms;
+}
+.delay1000ms{
+	transition-delay: 1000ms;
+}
+.delay1500ms{
+	transition-delay: 1500ms;
+}
+.delay2000ms{
+	transition-delay: 2000ms;
+}
+.delay2500ms{
+	transition-delay: 2000ms;
+}
+.ReadMoreVisible {
+      opacity: 1;
+      animation-duration: 2s;
+      animation-name: fade-in;
+      -moz-animation-duration: 2s;
+      -moz-animation-name: fade-in;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-name: fade-in;
+}
+/* FormParts */
+.fButton{
+	display:inline-block;
+	color:black;
+	border:solid 0.5px black;
+	padding:5px 10px;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.fButton:hover{
+	color:white;
+	background:black;
+	border:soid 0.5px black;
+}
+.divBtn{
+	display:inline-block;
+	color:black;
+	background:white;
+	border:solid 0.5px black;
+	padding:5px 10px;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.divBtn:hover{
+	color:white;
+	background:black;
+	border:soid 0.5px black;
+}
+/* ExtentionButton */
+.extensionWrapper{
+	cursor:pointer;
+	display:none;
+}
+.extension{
+	display:inline-block;
+}
+
+/* text underline effect */
+a{
+	color:black;
+	outline: none !important;
+}
+
+/* OverLine Effect */
+.OverlineEffect{
+	position:relative;
+}
+.OverlineEffect::after {
+	color:black;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+.OverlineEffect:hover::after {
+　color:black;
+  transform: scale(1, 1);
+}
+
+
+/* Graphic */
+
+
+/* Font */
+.fs0{
+
+}
+.fs1{
+	font-size:0.7em;
+	letter-spacing:0.1em;
+}
+.fs2{
+	font-size:0.8em;
+	letter-spacing:0.1em;
+}
+.fs3{
+	font-size: 1.3rem;
+    font-weight: 500;
+	letter-spacing:0.1em;
+}
+.fs4{
+	font-size: 1.5rem;
+	letter-spacing:0.1em;
+}
+.fs5{
+	font-size: 1.7rem;
+    font-weight: 300;
+	letter-spacing:0.1em;
+}
+.fs6{
+	font-size: 2.0rem;
+	font-weight: 300;
+	letter-spacing:0.1em;
+}
+.fs7{
+	font-size:  1.8rem;
+    font-weight: 300;
+    letter-spacing:0.2em;
+}
+.fs8{
+	font-size: 2.4rem;
+	letter-spacing:0.1em;
+}
+.fs9{
+	font-size: 2.8rem;
+	letter-spacing:0.1em;
+}
+.fs40{
+	font-size: 4.0rem;
+	letter-spacing:0.1em;
+}
+.fs46{
+	font-size: 4.6rem;
+	letter-spacing:0.1em;
+}
+.fs50{
+	font-size: 5.0rem;
+	letter-spacing:0.1em;
+}
+.p{
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+/* For Font Style */
+html {
+    visibility: hidden;
+	opacity:0
+}
+
+html.wf-active,
+html.loading-delay {
+    visibility: visible;
+	opacity:1
+}
+.titleFontFamily{
+/*	font-family: 'Playfair Display', 'Bodoni Moda', serif;	*/
+/*	font-family: 'Cormorant Garamond', serif;	*/
+/*    font-family: "Yu Mincho", "YuMincho", serif;	*/
+/*	font-family: acumin-pro, sans-serif;	*/
+/*	font-family: toppan-bunkyu-midashi-min-st, serif;*/
+	font-family: greycliff-cf, sans-serif;
+	font-weight: 700;
+	font-style: normal;	
+	
+	line-height: 1.1em;
+	letter-spacing:0.05em;
+}
+/*  For Line */
+.linePortrait{
+    width: 1px;
+    height: 140px;
+    border-right: solid 0.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*  For Slide Mask  */
+.mask_slide_pr{
+	position:relative;
+}
+.mask_slide_side{
+    display: inline-block;
+    overflow: hidden;
+    width: 0%;
+    white-space: nowrap;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.mask_slide_up{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+	top: 0;
+    left: 0;
+	overflow: hidden;
+	
+}
+.mask_slide_up::after{
+  position: absolute;
+  left: 0;
+  top:0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: white;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+	
+	transition-timing-function: cubic-bezier(0, 0.69, 0.25, 1);
+}
+.mask_slide_up_do{
+}
+.mask_slide_up_do::after{
+	height:0%;
+}
+
+
+.mask_slide_down{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+	top: 0;
+    left: 0;
+	overflow: hidden;
+	
+}
+.mask_slide_down::after{
+  position: absolute;
+  left: 0;
+  top:0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: white;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+	
+	transition-timing-function: cubic-bezier(0, 0.69, 0.25, 1);
+}
+.mask_slide_down_do{
+}
+.mask_slide_down_do::after{
+	height:0%;
+	top:100%;
+}
+.grayScale{
+	filter: grayscale(100%);
+
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+body{
+
+}
+/* OverLine Effect */
+.OverlineEffect{
+	position:relative;
+}
+.OverlineEffect::after {
+	display:none;
+}
+.OverlineEffect:hover::after {
+　color:black;
+  transform: scale(1, 1);
+}
+
+/* Font */
+
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+body{
+
+}
+
+/* Font */
+
+
+}

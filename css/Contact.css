@@ -1,0 +1,77 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 75px;
+}
+
+.PageWrapper > .ContentsArea{
+	padding: 0 100px;
+    padding-bottom: 125px;
+    min-height: 100vh;
+}
+#contactHeader{
+	padding-bottom:50px;
+    min-height: initial;
+}
+#contactHeader > .caption{
+	margin-bottom:80px;
+}
+#contactHeader > .selectArea{
+	padding: 0;
+    text-align: left;
+	display: inline;
+}
+#contactHeader > .selectArea > .parts{
+    display: inline-block;
+    width: 275px;
+    margin: 0px 40px 70px 40px;
+	vertical-align: top;
+	cursor:pointer;
+	
+	/* animation */	
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+#contactHeader > .selectArea > .parts:hover{
+	color:gray;
+}	
+#contactHeader > .selectArea > .parts > .wrap{ 
+    height: 180px;
+    border: solid 1px;
+    padding: 30px 20px;
+    padding-top: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#contactHeader > .selectArea > .parts > .wrap > .numbering{ 
+    margin-bottom: 14px;
+}
+#contactHeader > .selectArea > .parts > .wrap > .title{ 
+	font-size: 13pt;
+}
+#contactHeader > .selectArea > .parts > .wrap > .title{ 
+}
+#contactHeader > .selectArea > .parts > .caption{
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

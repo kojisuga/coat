@@ -1,0 +1,222 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+a{
+	color:black;
+}
+a:visit{
+	color:black;
+}
+.ScrollImageWrapper{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    margin-bottom:100px;
+}
+.parts{
+    padding-top: 0;
+    padding-bottom: 100px;	
+    position: relative;
+}
+.parts > .LineLeft {
+	width: 100px;
+    height: 1px;
+    /* display: inline-block; */
+    background-color: var(--key-color);
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 100;
+}
+
+.parts > .LineRight {
+	width: 100px;
+    height: 1px;
+    /* display: inline-block; */
+    background-color: var(--key-color);
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: calc(70% - 100px);
+    z-index: 100;
+}
+
+
+.parts > .image{
+    vertical-align: middle;
+	display:inline-block;
+    width: calc(70% - 30px);
+    margin-right: 50px;
+}
+.parts > .imageRight{
+    vertical-align: middle;
+	display:inline-block;
+    width: calc(70% - 30px);
+    margin-left: 50px;
+}
+.parts > .TextLayer{
+    position: relative;
+    display: inline-block;
+    width: calc(30% - 30px);
+    height: 100%;
+    z-index: 100;
+}
+.parts > .vaTop{
+	vertical-align:top;
+	
+}
+.parts > .vaCenter{
+	vertical-align:middle;
+}
+.parts > .TextLayer > .TopLayter{
+    display: inline-block;
+/*	overflow: hidden;	*/
+	margin-bottom:20px;
+	text-overflow: ellipsis;
+}
+
+.parts > .TextLayer > .textLeft{
+	text-align:left;
+}
+
+/* ReadMore */
+.ReadMoreWrapper{
+    text-align: left;
+}
+.ReadMoreWrapper > .ReadMore{
+    padding: 0 0 5px 0;
+    display: inline-block;
+} 
+/*
+a > .parts:hover > .TextLayer > .TopLayter > .ReadMoreWrapper > .OverlineEffect::after{
+  transform: scale(1, 1);
+}
+*/
+
+
+.parts > .TextLayer > .textRight{
+    text-align: left;
+}
+
+.TopLayter > .textTitle{
+	border-bottom: solid 1px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.textRight > .textTitle > .Index{
+}
+.textRight > .textTitle > .Index > .Num{
+	color:var(--key-color);
+    display: inline-block;
+}
+
+.textRight > .textTitle > .IndexText{
+}
+.textContents{
+	margin-bottom:15px;
+	display: -webkit-box;          /* line-clamp を有効にするために指定する */
+	-webkit-box-orient: vertical;  /* line-clamp を有効にするために指定する */
+		overflow: hidden;              /* ボックスからはみ出た分を非表示にする */
+}
+.textLeft > .textTitle > .Index{
+}
+.textLeft > .textTitle > .Index > .Num{
+	color:var(--key-color);
+    display: inline-block;
+}
+
+.textLeft > .textTitle > .Index > .Line {
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--key-color);
+    vertical-align: middle;
+}
+
+.textLeft > .textTitle > .IndexText{
+}
+
+/* slide mask */
+.parts > .TextLayer > .TopLayter > .FadeInSlideMaskLeft {
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: inherit;
+    top:0;
+    left:0;
+    
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.parts > .TextLayer > .TopLayter > .FadeInSlideMaskRight {
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: inherit;
+    top:0;
+    left:0;
+    
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+	transform-origin:right;
+
+}
+
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ScrollImageWrapper{
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.parts {
+    padding-bottom: 30px;
+}
+.parts > .image {
+    width: 100%;
+	margin-right: 0px;
+}
+.parts > .TextLayer {
+    width: 100%;
+}
+.TopLayter > .textTitle {
+    display: inline-block;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+.parts > .imageRight {
+    width: 100%;
+	margin-left: 0px;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

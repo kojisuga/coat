@@ -1,0 +1,158 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 50px;
+}
+
+.PageWrapper > .ContentsArea{
+	padding: 0 100px;
+    padding-bottom: 125px;
+    min-height: 100vh;
+}
+
+/* __ product _______*/
+#product{
+}
+#product > .caption{
+	margin-bottom: 150px;
+}
+#product > .parts{
+	margin-bottom:160px;
+}
+#product > #paint{
+}
+#product > .parts > .object{
+	margin-bottom:50px;
+	text-align:left;
+}
+#product >  .parts > .object> .caption{
+	display: inline-block;
+	width: calc(50% - 100px);
+	padding-right: 100px;
+    text-align: left;
+    vertical-align: middle;
+}
+#product >  .parts > .object> .caption> .title{
+    margin-bottom: 30px;
+}
+#product >  .parts > .object> .caption> .txt{
+}
+#product >  .parts > .object> .image{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+#product >  .parts > .object> .image img{
+}
+#product >  #paint > .option{
+}
+#product >  #paint > #palette{
+	text-align:left;
+}
+#product >  #paint > #palette > .label{
+	display:inline-block;
+	border:solid 1.5px;
+	padding: 10px 15px;
+	cursor:pointer;
+	
+	/* animation */	
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+#product >  #paint > #palette > .label:hover{
+	background-color:black;
+	color:white;
+}
+#product >  #paint > #palette > #palletteBtn{
+	margin-left:0px;
+}
+#product >  #paint > #palette > .content{
+}
+.content > .group{
+	text-align: left;
+    margin-bottom: 30px;
+}
+
+.content > .group > .g_name{
+	display: inline-block;
+    vertical-align: top;
+    writing-mode: vertical-rl;
+}
+.content > .group > .image{
+	width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+.content > .group  > .partsArea{
+    display: inline-block;	
+    width: calc(100% - 400px);
+}
+.content > .group  > .partsArea a > .parts{
+    display: inline-block;	
+    margin-right: 30px;
+	margin-bottom:30px;
+}
+.content > .group  > .partsArea a > .parts > .colorView{
+    width: 100px;
+    height: 150px;
+	margin-bottom:10px;
+}
+.content > .group  > .partsArea a > .parts > .c_name{
+}
+
+.wrapper{
+    text-align:center;
+}
+
+.color_parts{
+	display: inline-block;
+    width: 100px;
+    height: 150px;
+    /* border: solid 0.5px; */
+    margin: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.color_parts > .color{
+	width:100px;
+	height:150px;
+}
+.color_parts > .text{
+	
+}
+#product >  .parts > .detailProduct{
+}
+#product >  .parts > .detailProduct > .pLink > .parts{
+    display: inline-block;
+    width: 180px;
+    margin: 0 40px;
+}
+#product >  .parts > .detailProduct > .pLink > .parts > image{
+}
+#product >  .parts > .detailProduct > .pLink > .parts > title{
+}
+#product >  .parts > .detailProduct > .pLink > .parts > caption{
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

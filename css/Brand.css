@@ -1,0 +1,123 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ScrollImageWrapper{
+    text-align: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 80px 150px 0px 150px;
+}
+.ScrollImageWrapper > .parts{
+    display: inline-block;
+    margin-bottom: 175px;
+}
+.ScrollImageWrapper > .wide32{
+    display: inline-block;
+	width: 100%;
+	padding-left:100px;
+	padding-right:100px;
+}
+.ScrollImageWrapper > .wide97{
+    display: inline-block;
+	width: 100%;
+	padding-left:100px;
+	padding-right:100px;
+}
+.ScrollImageWrapper > .tall-Large{
+	display: inline-block;
+	padding-left:50px;
+	padding-right:50px;
+    width: 55%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .tall-Small{
+	display: inline-block;
+	padding-left:50px;
+	padding-right:50px;
+    width: 45%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .square{
+	display: inline-block;
+	padding-left:50px;
+	padding-right:50px;
+    width: 45%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .tall-Single{
+	display: inline-block;
+	padding-left:50px;
+	padding-right:50px;
+    width: 65%;
+    vertical-align: middle;
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+	.ScrollImageWrapper{
+    text-align: center;
+    max-width: 1700px;
+    margin: 0 auto 50px auto;
+    padding: 60px 20px 0px 20px;
+}
+.ScrollImageWrapper > .parts{
+    display: inline-block;
+    margin-bottom: 14px;
+}
+.ScrollImageWrapper > .wide32{
+    display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.ScrollImageWrapper > .wide97{
+    display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.ScrollImageWrapper > .tall-Large{
+	display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .tall-Small{
+	display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .square{
+	display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.ScrollImageWrapper > .tall-Single{
+	display: inline-block;
+	padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+	vertical-align: middle;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

@@ -1,0 +1,482 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+#wpadminbar{
+	display:none;
+}
+#colophon{
+	display:none;
+}
+.sbi_header_img_hover{
+	display:none;
+}
+#sbi_load{
+	display:none;
+}
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    text-align:center;
+}
+/*__ Common   ____________________________*/
+.PageWrapper{
+    /* height: 100%; */
+    text-align: center;
+    min-height: 100%;
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-bottom: 50px; */
+}
+
+.ContentsArea{
+	padding:0;
+	padding-bottom:125px;
+	min-height:100vh;
+}
+
+#TopImage{
+	height: 100vh;
+	width: 100vw;
+    text-align: center;
+	position: relative;
+	padding:50px;
+	min-height: 100vh;
+}
+
+#TopImage >.partsMain{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+}
+
+#TopImage > .partsCenter{
+	display: inline-block;
+    /* text-align: center; */
+    /* width: calc(40.25vw); */
+    /* height: 87vh; */
+    /* top: 6.5vh; */
+    /* left: 53.25vw; */
+    /* transform: translateY(-57%); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+
+
+
+#TopImage{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+#TopImage > .partsL{
+    display: inline-block;
+    width: calc(40.25vw);
+    height: calc(87vh);
+    left: 0;
+	position: absolute;
+    margin-left: 9.75vw;
+    overflow: hidden;
+}
+#TopImage > .partsL video{
+	height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+#TopImage > .partsR{
+	display: inline-block;
+    text-align: center;
+    width: calc(40.25vw);
+    height: 87vh;
+    left: 50vw;
+	position: absolute;
+    overflow: hidden;
+}
+#TopImage > .partsR video{
+	height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+#TopImage > .partsCenter{
+	display: inline-block;
+    /* text-align: center; */
+    /* width: calc(40.25vw); */
+    /* height: 87vh; */
+    /* top: 6.5vh; */
+    /* left: 53.25vw; */
+    /* transform: translateY(-57%); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 127px;
+}
+
+
+
+#SubImage{
+	margin-bottom: 200px;
+}
+#SubImage > .partsL{
+	height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: calc(13vw);
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+#SubImage > .partsL img{
+    height: 100%;
+}
+#SubImage > .partsR{
+    /* padding-top: 10vh; */
+    /* padding-bottom: 5vh; */
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: calc(40vw);
+    padding-right: 50px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    /* background: blue;*/
+}
+#SubImage > .partsR img{
+}
+
+#SubImage > .partsR_vh{
+    /* padding-top: 10vh; */
+    /* padding-bottom: 5vh; */
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: calc(40vw);
+    padding-right: 50px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    /* background: blue;*/
+}
+#SubImage > .partsR_vh img{
+    height: 100%;
+}
+
+/*-----------------------*/
+/*   concept   */
+/*-----------------------*/
+#Concept{
+    position: relative;
+    margin-bottom: 200px;
+    padding: 300px 50px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    min-height: initial;
+}
+#Concept > .wrapper{
+	display: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;	
+}
+#Concept > .wrapper > .title{
+	position:relative;
+    display: inline-block;
+    width: 320px;
+    vertical-align: top;
+}
+#Concept > .wrapper > .title > .append{
+	position: absolute;
+    top: 100%;
+    left: 0% !important;
+    transform: translateY(+140%)!important;
+}
+
+
+
+#Concept > .wrapper > .caption{
+	position:relative;
+	display: inline-block;
+    width: calc(70% - 30px);
+    padding-left: 80px;
+    border-left: solid 0.5px;
+    vertical-align: middle;
+}
+#Concept > .wrapper > .caption > .txt{
+	padding-bottom:30px;
+}
+#Concept > .wrapper > .caption a{
+	position: absolute;
+    top: 100%;
+    left: 100%;
+	transform: translate(-100%,100%);
+}
+
+#Concept > .wrapper > a > .detail{
+}
+/* _Paint__________*/
+#Paint{
+    margin-bottom: 200px;
+}
+#Paint > .Parts{
+	position: relative;
+	display: inline-block;
+    width: 49%;
+    height: 100vh;
+	vertical-align: top;
+	padding: 25px;
+	text-align:left;
+}
+#Paint > .Parts > .title{
+    position:absolute;
+    left: 90px;
+    top: -140px;
+    z-index: 100;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+#Paint > .Parts > .title::before{
+    display: inline-block;
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    content: " ";
+    margin-bottom: 15px;
+    transform: translateX(-2px);
+}
+
+#Paint > .Parts > .img_main{
+	height: 100%;
+    width: 100%;
+	overflow: hidden;
+    padding: 30px 0;
+}
+
+#Paint > .Parts > .img_main img{
+    height: 100%;
+    max-width: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#Paint > .Parts > .img_sub{
+	padding: 0px 50px;
+    padding-top: 100px;
+	margin-bottom: 50px;
+}
+
+#Paint > .Parts > .img_sub img{
+}
+#Paint > .Parts > .caption{
+	padding: 0px 50px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#Paint > .Parts > .more{
+    padding-left: 50px;
+}
+#Paint > .Parts > .more > .detail{
+     /* margin-left: 50px; */
+    display: inline-block;
+}
+/* __Planing _______*/
+#Planing > .left{
+	margin-right:50px;
+}
+#Planing > .right{
+	margin-left:50px;
+}
+
+#Planing > .image{
+	display:inline-block;
+	width:45%;
+	vertical-align:middle;
+}
+#Planing > .text{
+	display:inline-block;
+	width:40%;
+	vertical-align:middle;
+	text-align:left;
+}
+#Planing > .text > .title{
+	margin-bottom:30px;
+}
+#Planing > .Parts > .title::before{
+    display: inline-block;
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    content: " ";
+    margin-bottom: 15px;
+    transform: translateX(-2px);
+}
+#Planing > .text > .caption{
+	margin-bottom:30px;
+}
+#Planing > .text  a > .detail{
+	text-align:left;
+}
+/* __ Gallery _______*/
+#Gallery{
+	position: relative;
+}
+#Gallery > .title{
+	position: absolute;
+    z-index: 100;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    left: 130px;
+}
+#Gallery > .title::before {
+    display: inline-block;
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    content: " ";
+    margin-bottom: 15px;
+    transform: translateX(-2px);
+}
+}
+#Gallery > .title::after{
+	content:"a";
+	display:inline-block;
+}
+#Gallery > .contents{
+    padding: 0 30px;
+    padding-top: 220px;
+}
+#Gallery > .contents > .parts{
+	display: inline-block;
+    padding: 0 30px;
+    width: 30%;
+    margin-bottom: 90px;
+	text-align: left;
+	font-size: 1.2rem;
+}
+#Gallery > .contents > .parts > .image{
+}
+#Gallery > .contents > .parts > .image img{
+}
+#Gallery > .contents > .parts > .type{
+}
+#Gallery > .contents > .parts > .option{
+	color: gray;
+}
+/* __ PRODUCTS _______*/
+#Products > .caption {
+    margin-bottom: 90px;
+    padding: 0 80px;
+    text-align: left;
+    display: inline-block;
+    width: 70%;
+}
+#Products > .title{
+	margin-bottom:50px;
+}
+#Products > .left{
+	margin-right:50px;
+}
+#Products > .right{
+}
+
+#Products > .image{
+	display:inline-block;
+	width:45%;
+	vertical-align: middle;
+}
+#Products > .text{
+	display:inline-block;
+	width:45%;
+	vertical-align: middle;
+	text-align:left;
+}
+#Products > .text > .title{
+	margin-bottom:30px;
+}
+#Products > .text > .caption{
+	margin-bottom:30px;
+}
+#Products > .text  a > .detail{
+	text-align:left;
+}
+/* __ Journal _______*/
+
+#Journal {
+    text-align: center;
+	margin-bottom: 0px;
+	padding-top: 100px;
+	padding-bottom: 250px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+#Journal > .title{
+	margin-bottom:50px;
+}
+#Journal > .ListWrapper{
+    display: inline-block;
+    text-align: left;
+}
+#Journal > .ListWrapper > .pLink > .List{
+    margin-bottom: 10px;
+}
+#Journal > .ListWrapper > .pLink > .List > .Date{
+	display:inline-block;
+	margin-right:10px;
+}
+#Journal > .ListWrapper > .pLink > .List > .Title{
+	display:inline-block;
+}
+#Journal > .ListWrapper > .pLink > .List > .Title::before{
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    content: " ";
+    margin-bottom: 4px;
+    transform: translateX(-2px);
+    margin-right: 8px;
+}
+#Journal  a > .detail{
+	text-align:right;
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+/* Product */
+#Product{
+max-width: 1000px;
+    width: calc(100%);
+    text-align: left;
+    display: inline-block;
+}
+
+#Product a{
+
+}
+#Product a > .Parts{
+    margin: 10px 10px;
+    text-align: left;
+    display: inline-block;
+    width: calc((100% - 50px) / 2);
+}
+#Product a > .Parts > .img{
+	margin-bottom:10px;	
+}
+
+
+}
+

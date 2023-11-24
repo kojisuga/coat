@@ -1,0 +1,260 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 150px;
+}
+
+.PageWrapper > .ContentsArea{
+	text-align:left;
+	margin: 0 100px;
+    padding-bottom: 60px;
+/*    min-height: 100vh;*/
+}
+.PageWrapper > .ContentsArea > .title{
+	font-weight:bold;
+
+}
+#selectColor{
+}
+#selectColor > .selected{
+    display: inline-block;
+	vertical-align: top;
+	margin-right:100px;
+}
+
+#selectColor > .group{
+	font-weight:bold;
+	font-size:22px;
+	margin-bottom:20px;
+}
+
+#selectColor > .selected > .title{
+	color: black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#selectColor > .selected > .group{
+	margin-bottom:5px;
+	color:gray;
+}
+#selectColor > .selected > .color{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    display: inline-block;
+	margin-right: 20px;
+	margin-bottom:5px;
+    vertical-align: top;
+	border:solid 0.5px #eeeeee;
+}
+#selectColor > .selected > .captionArea{
+	display:inline-block;
+	margin-right:10px;
+    vertical-align: middle;
+}
+#selectColor > .otherColorArea{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#selectColor > .otherColorArea > .title{
+    margin-bottom: 5px;
+	color:gray;
+}
+
+
+
+#selectColor > .otherColorArea > .contents{
+}
+#selectColor > .otherColorArea > .contents > .parts{
+    display: inline-block;
+}
+#selectColor > .otherColorArea > .contents > .parts > .color{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+	margin-right: 20px;
+	margin-bottom:5px;
+    vertical-align: top;
+}
+#selectColor > .otherColorArea > .contents > .parts > .c_name{
+}
+
+/* selectVolume */
+#selectVolume{
+	border-top: solid 0.5px #cccccc;
+	padding-top: 60px;
+	border-bottom: solid 0.5px #CCCCCC;
+}
+#selectVolume > .title{
+	margin-bottom:30px;
+	font-weight:bold;
+}
+#selectVolume > .captionArea{
+	margin-bottom:20px;
+}
+#selectVolume > .parts{
+	display:inline-block;
+	text-align:center;
+    vertical-align: top;	
+	width:140px;
+	margin-right:50px;
+}
+#selectVolume > .parts > .image{
+	margin-bottom:10px;
+}
+#selectVolume > .parts > .p_name{
+}
+#selectVolume > .attention{
+	padding-top:50px;
+}
+#paintVolume{
+	padding:5px 0 5px 12px;
+}
+
+#selectOption1{
+/*	border-top: solid 1px #888888;	*/
+	padding-top: 60px;
+	overflow:hidden;
+	
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+
+	
+}
+#selectOption1 > .title{
+	margin-bottom:30px;
+	font-weight:bold;
+}
+#selectOption1 > .captionArea{
+	display: inline-block;
+    margin-right: 100px;
+}
+#selectOption1 > .captionArea >.parts{
+	margin-bottom: 10px;	
+	color:black;
+}
+
+#selectOption1 > .captionArea >.parts > .head{
+    display: inline-block;
+    width: 200px;
+}
+#selectOption1 > .captionArea >.parts > .head:hover{
+	color:black;
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+}
+#selectOption1 > .captionArea >.parts > .contents{
+	display: inline-block;
+    vertical-align: top;
+    border-left: solid 0.5px gray; 
+	padding-left: 50px;
+}
+#selectOption1 > .captionArea >.parts > .contents > .b_name{
+	color:black;	
+	cursor:pointer;
+}
+#selectOption1 > .captionArea >.parts > .contents > .b_name:hover{
+	color:#aaaaaa;	
+}
+#selectOption1 > .captionArea > .attention{
+}
+
+#selectOption1 > .image{
+	display: inline-block;
+    width: 500px;
+    vertical-align: top;
+}
+#selectOption2{
+	border-top: solid 1px #888888;	
+	padding-top: 60px;
+}
+#selectOption2 > .title {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#selectOption2 > .captionArea {
+}
+#selectOption2 > .captionArea > .parts{
+}
+#selectOption2 > .captionArea > .parts> .contents{
+}
+#selectOption2 > .captionArea > .parts > .contents > .b_name2{
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+	color:gray;
+	cursor:pointer;
+}
+#selectOption2 > .captionArea > .parts > .contents > .b_name2:hover{
+	color:black;
+}
+
+#totalInfo{
+	border: solid 0.5px #cccccc;
+	background:#eeeeee;
+	padding: 80px;
+	margin-bottom: 80px;
+	max-width: 800px;
+}
+#totalInfo > .caption{
+	font-weight:bold;
+    margin-bottom: 20px;
+}
+#totalInfo > .parts{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: solid 0.5px #cccccc;
+}
+#totalInfo > .parts > .title{
+	width:100px;
+	display:inline-block;
+}
+#totalInfo > .parts > .data{
+	display:inline-block;
+}
+#totalInfo > .formTotal{
+	padding-top:30px;
+}
+.addToCartResult{
+	padding-top:30px;
+}
+
+.smooth1s{
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

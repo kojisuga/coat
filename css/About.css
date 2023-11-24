@@ -1,0 +1,236 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 100px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 50px;
+}
+
+.PageWrapper > .ContentsArea{
+	padding: 0 12vw;
+    margin-bottom: 240px;
+}
+
+/* top ______ */
+#top{
+	padding: 0;
+    overflow: hidden;
+}
+#top > .parts{
+	margin-bottom: 80px;
+    padding-left: 120px;
+}
+#top > .parts > .title{
+	display: inline-block;
+    width: 300px;
+    text-align: left;
+    vertical-align: top;
+}
+#top > .parts > .caption{
+	display: inline-block;
+	width: calc(100% - 320px);
+	padding-top: 7px;
+	padding-right: 300px;
+    vertical-align: top;
+    text-align: left;
+}
+#top > .image{
+	width: 200vw;
+	text-align: left;
+	height: calc(100vh - 270px);
+}
+#top > .image > .wrap {
+	display:inline-block;
+	height:100%;
+}
+#top > .image > .wrap img{
+	height:100%;
+	width:auto;
+}
+.imageScrollDone{
+	transform:translateX(-100vw);
+    /* animation */	
+    -webkit-transition: all 30s;
+    -moz-transition: all 30s;
+    -ms-transition: all 30s;
+    -o-transition: all 30s;
+	transition: all 30s;	
+    transition-timing-function: linear;
+}
+/*_ sub _____________*/
+#SubMenu{
+	
+}
+#SubMenu >.Parts{
+    display: inline-block;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+	width: 200px;
+	cursor:pointer;
+	
+	/* animation */	
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+#SubMenu >.Parts:hover{
+/*    transform: scale(1.1);	*/
+    color: #aaaaaa;
+}
+#SubMenu > .Left{
+}
+#SubMenu > .Right{
+}
+#SubMenu >.Parts > .Numbering{
+	font-size: 2.2em;
+	position:relative;
+	
+}
+/*
+#SubMenu >.Parts > .Numbering::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;	
+    border-radius: 2px;
+}
+*/
+#SubMenu >.Parts > .underline{
+    height: 8px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: solid 0.5px;
+}
+
+
+#SubMenu >.Parts > .Title{
+	margin:10px 0;
+}
+#SubMenu >.Parts > .More{
+}
+
+/*_ concept _____________*/
+#concept{
+}
+#concept >.title{
+	margin-bottom:75px;
+}
+#concept > .parts{
+	margin-bottom:150px;
+}
+#concept > .parts > .main{
+	margin-bottom:80px;
+}	
+#concept > .parts > .main >.image{
+	width: 55%;
+    display: inline-block;
+    vertical-align: middle;	
+}	
+#concept > .parts > .main >.image img{
+	margin-bottom:30px;
+}
+#concept >.parts > .main >.caption{
+    width: calc(100% - 55% - 80px);
+    display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	position: sticky;
+    top: calc(50% - 200px);
+	padding-top: 30px;
+}
+#concept >.parts > .main > .left{
+	margin-right: 70px;
+	vertical-align: top;
+}
+#concept >.parts > .main > .right{
+	
+}
+
+#concept >.parts >.main >.caption > .title{
+    font-size: 2em;
+    margin-bottom: 40px;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+}	
+#concept >.parts >.main >.caption > .title::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}	
+#concept >.parts >.main >.caption > .left::after{
+}	
+#concept >.parts >.main >.caption > .right::after{
+    transform: translateX(-70px);
+}	
+
+
+#concept >.parts >.main >.caption > .txt{
+}	
+#concept >.parts >.Sub{
+	display:inline-block;
+}
+#concept >.parts >.Sub >.caption{
+	text-align:left;
+}	
+
+
+/*_ profile _____________*/
+#profile{
+}
+#profile >.title{
+	margin-bottom:140px;
+}
+#profile > .parts{
+	margin-bottom:80px;
+}
+#profile > .parts > .title{
+	display: inline-block;
+    width: 220px;
+    text-align: left;
+    vertical-align: top;
+}
+#profile > .parts > .caption{
+	display: inline-block;
+    width: calc(100% - 330px);
+	text-align: left;
+    vertical-align: top;
+
+}
+#profile > .parts > .caption > .txt{
+	margin-bottom:40px;
+}
+#profile > .parts > .caption > .txt li{
+	list-style:none;
+}
+#location > .caption > .txt{
+	padding-bottom:40px;
+	margin-bottom:40px;
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

@@ -1,0 +1,104 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ContentsAreaWrapper{
+    /* padding-left: 150px; */
+    /* padding-right: 150px; */
+    padding-top: 150px;
+    margin-bottom: 100px;
+    margin: auto;
+    text-align: center;
+}
+.ContentsArea{
+    display: inline-block;
+    text-align: left;
+    width: 848px;
+    margin-bottom: 100px;
+}
+.ContentsArea > a{
+	color:black;	
+}
+.ContentsArea > a > .parts{
+	position: relative;
+    display: inline-block;
+    width: 400px;
+    padding-top: 0;
+    margin-bottom: 48px;
+}
+.ContentsArea > a > .parts img{
+	vertical-align:middle;
+}
+.ContentsArea > a > .parts > .name{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+    color: white;
+	letter-spacing: 0.1em;
+}
+.ContentsArea > a > .parts > .GrayMask{
+	position:absolute;
+	width:100%;
+	height:100%;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.2;
+
+	/* animation */	
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ContentsArea > a > .parts > .GrayMask:hover{
+    opacity: 0;
+}
+.layoutLeft{
+	margin-right:20px;
+}
+.layoutRight{
+	margin-left:20px;
+}
+
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ContentsArea{
+	width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ContentsArea > a > .parts {
+    position: relative;
+    display: inline-block;
+    width:  100%;
+    padding-top: 0;
+    margin-bottom: 40px;
+}
+.layoutLeft {
+    margin-right: 0;
+}
+.layoutRight {
+    margin-left: 0px;
+}
+.ContentsArea > a > .parts > .name {
+	text-align:center;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

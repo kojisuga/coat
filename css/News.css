@@ -1,0 +1,102 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ContentsLayoutWrapper{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 200px;
+    margin-bottom:100px;
+    min-height:100%;
+}
+/* List */
+a{
+	color:black;
+}
+.parts{
+	padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+.parts > .title{
+}
+
+.parts > .date{
+    vertical-align: middle;
+    margin-bottom:30px;
+}
+.parts > .line{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 90px;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+.parts > .article{
+    vertical-align: middle;
+}
+.parts > .article img{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	
+}
+.parts > .Share{
+    margin-top: 50px;
+}
+
+.parts > .Share > .title{
+	margin-bottom: 5px;
+    color: #8888;
+    /* font-style: italic; */
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parts > .Share img{
+    width: 15px;
+    margin-right: 5px;
+}
+/* Detail */
+.ContentsLayoutWrapper > .title{
+}
+.ContentsLayoutWrapper > .bodytext{
+	margin-bottom: 50px;
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ContentsLayoutWrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    min-height: 100%;
+}
+.parts{
+	padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

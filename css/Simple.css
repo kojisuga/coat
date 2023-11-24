@@ -1,0 +1,80 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ContentsWrapper{
+	padding-top:100px;
+	padding-bottom:100px;
+	padding-left:150px;
+	padding-right:150px;
+	
+}
+.article a{
+    color: #3F51B5;
+    font-weight: 800;
+}
+.subtitle{
+    vertical-align: top;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 120px;
+	line-height: 2.2em;
+}
+.caption{
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-left: solid 1px;
+    /* border-bottom: solid 1px; */
+    padding-left: 30px;
+    width: calc(100% - 200px);
+	line-height: 2.2em;
+}
+.caption li{
+    list-style-type: none;
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ContentsWrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.subtitle {
+    width: 100%;
+	padding-bottom: 5px;
+ }
+.caption {
+    margin-bottom: 20px;
+	padding-top: 5px;
+    padding-left: 0px;
+    border-left: initial;
+    border-top: solid 1px;
+    width: 100%;
+}
+ .caption a{
+	margin-bottom:5px;
+}
+.caption li{
+list-style-type: none;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #eeeeee;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+

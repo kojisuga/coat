@@ -1,0 +1,213 @@
+/*====================================================================================*/
+/* about
+/*====================================================================================*/
+.PageWrapper{
+	padding-top: 50px;
+	text-align:center;
+}
+.PageWrapper > .title{
+	margin-bottom: 50px;
+}
+
+.PageWrapper > .ContentsArea{
+    padding: 0 calc(15vw);
+	margin-bottom: 240px;
+}
+
+/* top ______ */
+#top{
+	padding:0;
+}
+#top > .pLeft{
+	display: inline-block;
+    position: relative;
+    width: 40%;
+    height: calc(100vh - 100px);
+    vertical-align: top;
+}
+
+#top > .pLeft> .title{
+	position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 190px);
+}
+#top > .pLeft> .caption{
+    position: absolute;
+    width: 80%;
+	text-align: left;
+    top: calc(100% - 50px);
+    left: 50%;
+    transform: translate(-64%,-100%);
+}
+#top > .pRight{
+	display:inline-block;
+	position:relative;
+	width:40%
+}
+#top > .pRight >.image{
+	position:absolute;
+	width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.slideMask_right{
+	overflow:hidden;	
+	transform: translateX(-100%);
+
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;		
+}
+.slideMask_right > .child{
+	transform: translateX(100%);
+		
+	/* animation */	
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+	transition: all 1s;	
+
+}
+.slideMask_right_do{
+	transform: translateX(0%);
+		
+}
+.slideMask_right > .child_do{
+	transform: translateX(0%);
+}
+/*_ sub _____________*/
+#SubMenu{
+	
+}
+#SubMenu >.Parts{
+    position: relative;
+    padding: 30px 40px;
+    text-align: left;
+	width: 100%;
+	cursor:pointer;
+	
+	/* animation */	
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+
+#SubMenu >.subMenuClose{
+}
+#SubMenu >.subMenuClose:hover{
+	transform: scale(1.05);
+	background-color: #cccccc;	
+	border:initial;
+}
+#SubMenu >.subMenuOpen{
+	background-color: #cccccc;
+}
+#SubMenu >.subMenuOpen:hover{
+}
+#SubMenu > .Left{
+	border-bottom:solid 0.5px;
+}
+#SubMenu > .Right{
+}
+#SubMenu >.Parts > .Numbering{
+	font-size: 2.2em;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	
+}
+
+#SubMenu >.Parts > .Numbering::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+#SubMenu >.Parts > .Title{
+	    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#SubMenu >.Parts > .Title > .s_eng{
+	font-size:0.8em;
+}
+#SubMenu >.Parts > .more{
+	position: absolute;
+    left: 90%;
+    top: 50%;
+}
+#SubMenu >.Parts > .content{
+	max-width: 1000px;
+}
+#SubMenu >.Parts > .content > .image{
+	margin:20px 0;
+}
+#SubMenu >.Parts > .content > .txt{
+}
+#SubMenu >.Parts > .content > .closeBtn{
+}
+
+/*_ member _____________*/
+#member{
+	padding: 0 calc(10vw);
+}
+#member >.title{
+	margin-bottom: 50px;
+    text-align: left;
+}
+#member > .parts{
+	margin-bottom:150px;
+}
+#member > .parts > .image{
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
+    margin-right: 30px;
+}
+#member > .parts > .caption{
+	display: inline-block;
+    width: calc(100% - 240px);
+    vertical-align: middle;
+    text-align: left;
+}
+
+#member > .parts > .image> .personname{
+	margin-bottom:5px;
+}	
+#member > .parts > .image> .job{
+    padding-bottom: 10px;
+	display: inline-block;
+	color:darkgray;
+}	
+#member > .parts > .caption> .txt{
+}	
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+
+}

@@ -1,0 +1,69 @@
+/*====================================================================================*/
+/* Common
+/*====================================================================================*/
+
+/*====================================================================================*/
+/* PC 
+/*====================================================================================*/
+html,body {
+    height: 100%;
+}
+.ContentsLayoutWrapper{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 200px;
+    margin-bottom:100px;
+	min-height: 60%;
+}
+/* List */
+a{
+	color:black;
+}
+.parts{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.parts > .date{
+	display:inline-block;
+    vertical-align: middle;
+}
+.parts > .line{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 90px;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+.parts > .article{
+	display:inline-block;
+    vertical-align: middle;
+}
+
+/* Detail */
+.ContentsLayoutWrapper > .title{
+	
+}
+.ContentsLayoutWrapper > .bodytext{
+
+}
+/*====================================================================================*/
+/* スマフォ縦表示
+/*====================================================================================*/
+/* ipad pro? */
+@media only screen and (max-width: 1024px) and (orientation:portrait){
+.ContentsLayoutWrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    min-height: 100%;
+}
+}
+/*====================================================================================*/
+/* スマフォ　横表示
+/*====================================================================================*/
+@media only screen and (max-width: 1024px) and (orientation:landscape){
+}
+
